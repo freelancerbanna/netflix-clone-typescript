@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import classNames from 'classnames'
 
 //
 import { BellIcon, SearchIcon } from '@heroicons/react/solid'
@@ -28,7 +29,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className={`${isScrolled && 'bg-[#0c0b0b]'}`}>
+    <header className={classNames(isScrolled ? 'bg-[#0c0b0b]' : undefined)}>
       <div className="flex items-center space-x-2 md:space-x-10">
         <img
           src="https://rb.gy/ulxxee"
