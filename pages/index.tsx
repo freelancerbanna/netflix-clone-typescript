@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Banner, Header } from '../components'
+import { Banner, Header, Row } from '../components'
 import { Movie } from '../typings'
 import requests from '../utils/requests'
 
@@ -33,8 +33,24 @@ const Home = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
+      <main className="relative pl-8 pb-24 pt-20 lg:space-y-24 lg:pl-16">
+        {/* Banner section */}
         <Banner netflixOriginals={netflixOriginals} />
+
+        {/* Section of differrent movies and it's categories */}
+        <section className="md:space-y-24">
+          <Row title="Trending Now" movies={trendingNow} />
+          <Row title="Top Rated" movies={topRated} />
+          <Row title="Action Thrillers" movies={actionMovies} />
+
+          {/* My List */}
+          {/* {list.length > 0 && <Row title="My List" movies={list} />} */}
+
+          <Row title="Comedies" movies={comedyMovies} />
+          <Row title="Scary Movies" movies={horrorMovies} />
+          <Row title="Romance Movies" movies={romanceMovies} />
+          <Row title="Documentaries" movies={documentaries} />
+        </section>
       </main>
     </div>
   )

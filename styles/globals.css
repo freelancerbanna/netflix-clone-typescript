@@ -5,10 +5,10 @@
 /* styling on base of app like Body, Header, any type of tag */
 @layer base {
   body {
-    @apply bg-[#141414] text-white;
+    @apply bg-[#141414] text-white !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-slate-400;
   }
   header {
-    @apply fixed top-0 z-50 flex items-center justify-between w-full px-4 py-4 transition-all lg:px-10 lg:py-6;
+    @apply fixed top-0 z-50 flex w-full items-center justify-between px-4 py-4 transition-all lg:px-10 lg:py-6;
   }
 }
 /* styling apply on different components */
@@ -29,7 +29,7 @@
   }
 
   .membershipLink {
-    @apply text-blue-500 cursor-pointer hover:underline;
+    @apply cursor-pointer text-blue-500 hover:underline;
   }
 
   .planBox {
