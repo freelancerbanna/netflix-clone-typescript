@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { Movie } from '../typings'
+import { Movie } from '../../typings'
 
 interface Props {
   movie: Movie
@@ -13,7 +13,7 @@ const Thumbnail = ({ movie }: Props) => {
         src={`https://image.tmdb.org/t/p/w500${
           movie.backdrop_path || movie.poster_path
         }`}
-        className="rounded-sm object-cover md:rounded"
+        className="object-cover rounded-sm md:rounded"
         layout="fill"
       />
     </div>

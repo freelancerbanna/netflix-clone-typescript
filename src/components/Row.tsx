@@ -3,7 +3,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
 import classNames from 'classnames'
 
 //
-import { Movie } from '../typings'
+import { Movie } from '../../typings'
 import Thumbnail from './Thumbnail'
 
 interface Props {

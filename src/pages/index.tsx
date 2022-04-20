@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Banner, Header, Row } from '../components'
-import { Movie } from '../typings'
+import { Movie } from '../../typings'
 import requests from '../utils/requests'
 
 // defining interface of movies
@@ -33,7 +33,7 @@ const Home = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="relative pl-8 pb-24 pt-20 lg:space-y-24 lg:pl-16">
+      <main className="relative pt-20 pb-24 pl-8 lg:space-y-24 lg:pl-16">
         {/* Banner section */}
         <Banner netflixOriginals={netflixOriginals} />
 
