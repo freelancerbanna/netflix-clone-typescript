@@ -33,7 +33,9 @@ const Home = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>{/* <Banner /> */}</main>
+      <main>
+        <Banner netflixOriginals={netflixOriginals} />
+      </main>
     </div>
   )
 }
